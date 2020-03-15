@@ -119,7 +119,7 @@ header {
     background-image: url("./images/bg-header-mobile.png");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+    height: 900px;
     margin-bottom: 60px;
 }
 header .logo img {
@@ -242,9 +242,12 @@ footer {
     width: 50%;
 }
 
+.footer-content a:hover {
+    opacity: 0.8;
+}
+
 .footer-content .socials img {
-    /* margin-right: 10px; */
-    width: 15%;
+    width: 100%;
 }
 
 
