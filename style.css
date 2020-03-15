@@ -250,5 +250,78 @@ footer {
     width: 100%;
 }
 
+/* -------------------------------------------------------------------------- */
+/*                                MEDIA QUERIES                               */
+/* -------------------------------------------------------------------------- */
+@media screen and (min-width: 620px) {
+    .container {
+        max-width: 590px;
+    }
+}
+
+@media screen and (min-width: 920px) {
+
+    
+    body {
+        font-size: 18px;
+        overflow-x: hidden;
+    }
+
+    .container {
+        min-width: 860px;
+    }
+
+    header {
+        height: 600px;
+    }
+    header .logo img {
+        width: 20%;
+    }
+
+    .download-btn {
+        flex-direction: row;
+    }
+
+    .btn {
+        margin-right: 30px;
+    }
+
+    .snippets .container {
+        max-width: 200vw;
+    }
+
+    .snippets .description {
+        width: 50%;
+        margin: auto;
+    }
+
+    .snippets .details {
+        flex-direction: row;
+        text-align: initial;
+    }
+
+    .snippets .details img {
+        width: 100%;
+        margin-right: 60px;
+        margin-left: -100px;
+
+    }
+
+    .snippets .details .detail-content {
+        padding-right: 90px;
+    }
+
+    .clipboard img {
+        width: 70%;
+        margin: auto;
+    }
+
+    .workflow .steps {
+        grid-template-columns: repeat(3,1fr);
+        align-items: baseline;
+        justify-content: center;
+    }
+
+}
 
 
