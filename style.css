@@ -271,6 +271,7 @@ footer {
 
     header {
         height: 800px;
+        margin-bottom: 150px;
     }
     header .logo img {
         width: 20%;
