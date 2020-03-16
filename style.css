@@ -260,19 +260,17 @@ footer {
 }
 
 @media screen and (min-width: 920px) {
-
-    
     body {
         font-size: 18px;
         overflow-x: hidden;
     }
 
     .container {
-        min-width: 860px;
+        max-width: 860px;
     }
 
     header {
-        height: 600px;
+        height: 100vh;
     }
     header .logo img {
         width: 20%;
@@ -290,8 +288,13 @@ footer {
         max-width: 200vw;
     }
 
-    .snippets .description {
-        width: 50%;
+    .description {
+        width: 60%;
+        margin: 50px auto;
+    }
+
+    .download-btn {
+        width: 60%;
         margin: auto;
     }
 
@@ -301,14 +304,14 @@ footer {
     }
 
     .snippets .details img {
-        width: 100%;
-        margin-right: 60px;
-        margin-left: -100px;
-
+        width: 110%;
+        /* margin-right: 70px; */
+        margin-left: -80px;
     }
 
     .snippets .details .detail-content {
         padding-right: 90px;
+        margin-left: 30px;
     }
 
     .clipboard img {
@@ -322,6 +325,73 @@ footer {
         justify-content: center;
     }
 
+    .sponsors-grid {
+        grid-template-columns: repeat(5,1fr);
+        align-items: center;
+    }
+
+    .sponsors-grid img {
+        width: 60%;
+    }
+
+    .footer-content {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 0;
+
+    }
+
+    .footer-content .links {
+        grid-template-columns: repeat(3,1fr);
+        justify-content: initial;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .footer-content .links a {
+        font-size: 1.1rem;
+    }
+
+    .footer-content .links li {
+        align-self: start;
+        justify-self: start;
+        margin-bottom: 0px;
+    }
+
+    .footer-content .links li:nth-child(2) {
+        order: 4;
+    }
+    .footer-content .links li:nth-child(3) {
+        order: 2;
+    }
+    .footer-content .links li:nth-child(4) {
+        order: 5;
+    }
+    .footer-content .links li:nth-child(5) {
+        order: 3;
+    }
+
+    .footer-content .socials {
+        flex-direction: row;
+        width: initial;
+    }
+
+    .footer-content .socials img  {
+        margin-right: 20px;
+        width: 45%;
+    }
+
+}
+
+@media screen and (min-width:1220px) {
+    body {
+        font-size: 24px;
+    }
+
+    .container {
+        max-width: 1000px;
+    }
 }
 
 
